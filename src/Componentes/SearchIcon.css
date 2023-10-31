@@ -1,0 +1,11 @@
+.searchSvg {
+    fill: #2a2a2a;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.searchSvg:hover {
+    fill: #6a6a6a;
+    transition: 0,9s;
+}
