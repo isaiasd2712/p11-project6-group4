@@ -1,11 +1,18 @@
-import './Header.css'
+import './Header.css';
+import Logo from './LOGO';
 
-function Header () {
+function Header() {
     return (
-        <div className='header-left'>
-        <h1>Piratify</h1>
-        </div>
-        
+        <header>
+            <div className='header-left'>
+            <Logo/>
+            </div>
+            <div className='headeright'>
+                <input className="search-Btn" type="text" placeholder='Buscar' />
+                <input type="submit-Btn" />
+            </div>
+        </header>
+
     )
 }
 export default Header;
