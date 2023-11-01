@@ -1,10 +1,11 @@
-import './App.css'
-import Header from './Componentes/Header'
-
+import './App.css';
+import Header from './Componentes/Header';
+import Fetch from './Componentes/Fetch';
 function App() {
   return (
     <div>
-      <Header/>
+      <Header />
+      <Fetch />
     </div>
   )
 }
@@ -14,4 +15,4 @@ function App() {
 
 
 
-export default App
+export default App;

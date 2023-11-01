@@ -1,6 +1,6 @@
 import './Header.css';
-import Logo from './Logo';
-import SearchIcon from "../Componentes/SearchIcon"
+import Logo from './LOGO';
+
 
 function Header() {
     return (
