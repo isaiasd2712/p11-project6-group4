@@ -3,34 +3,34 @@ import './Fetch.css';
 
 function Fetch() {
     const [data, setData] = useState([]);
-    const url= "https://discoveryprovider.audius.co/v1/tracks/trending?app_name=ExampleApp";
+    const url = 'https://deezerdevs-deezer.p.rapidapi.com/infos';
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '02d42d8fe8mshb672bbe6c6a7da5p1d9af8jsn2d6bea08f902',
+		    'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com'
+        }
+    };
 
     useEffect(() => {
         const fetchData = async () => {
-          try {
-            const response = await fetch(url) ;
-            if (!response.ok) {
-              throw new Error('Network response was not ok');
+            try {
+                const response = await fetch(url, options);
+                const result = await response.json();
+                console.log(result);
+                setData(result.albums)
+            } catch (error) {
+                console.error(error);
             }
-            const jsonData = await response.json();
-            setData(jsonData);
-          } catch (error) {
-            console.error('Error fetching data:', error);
-          }
         };
         fetchData();
-      }, []);
-
+    }, []);
+    
     return (
-        <div>
-
-            {data.map((item) => (
-                <div key={item.id}>
-                    <p>{item.title}</p>    
-                </div>
-            ))}
-
+         <div>
+            <h1></h1>
         </div>
     );
 }
+
 export default Fetch
