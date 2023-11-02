@@ -19,9 +19,18 @@ function Fetch() {
           }
         };
         fetchData();
-        console.log()
       }, []);
 
+    return (
+        <div>
 
+            {data.map((item) => (
+                <div key={item.id}>
+                    <p>{item.title}</p>    
+                </div>
+            ))}
+
+        </div>
+    );
 }
 export default Fetch

@@ -17,20 +17,19 @@
     align-items: center;
     gap: 16px;
     position: relative;
-    max-width: 300px;
+    max-width: 500px;
 }
 
 .searchImput::placeholder {
+
     color: #6a6a6a;
 }
-
-
 .searchImput {
-    padding: 0 25px;
+    padding: 0 40px;
     background-color: #242424;
     height: 48px;
     width: 500px;
-    min-width: 200px;
+    min-width: 100px;
     border-radius: 32px;
     font-size: 16px;
     border: none;
