@@ -1,5 +1,8 @@
 import './Header.css';
-import Logo from './LOGO';
+import Logo from './Logo';
+import SearchIcon from './SearchIcon';
+
+
 
 
 function Header() {
