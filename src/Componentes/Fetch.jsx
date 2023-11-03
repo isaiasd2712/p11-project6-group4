@@ -3,14 +3,15 @@ import './Fetch.css';
 
 function Fetch() {
     const [data, setData] = useState([]);
-    const url = 'https://deezerdevs-deezer.p.rapidapi.com/infos';
+    const url = 'https://deezerdevs-deezer.p.rapidapi.com/search?q=%3CREQUIRED%3E';
     const options = {
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': '02d42d8fe8mshb672bbe6c6a7da5p1d9af8jsn2d6bea08f902',
-		    'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com'
+            'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com'
+
         }
-    };
+    }
 
     useEffect(() => {
         const fetchData = async () => {
@@ -18,17 +19,26 @@ function Fetch() {
                 const response = await fetch(url, options);
                 const result = await response.json();
                 console.log(result);
-                setData(result.albums)
             } catch (error) {
                 console.error(error);
             }
         };
         fetchData();
     }, []);
-    
+
     return (
-         <div>
-            <h1></h1>
+        <div>
+               <div>
+            {data.map((item) => (
+                <div key={item.id}>
+                    <p>{item.title}</p>
+                    <img src={item.cover_medium} alt={item.title} />
+                </div>
+            ))}
+        
+        </div>
+   
+
         </div>
     );
 }
