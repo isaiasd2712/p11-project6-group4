@@ -31,7 +31,7 @@ function Fetch() {
 
     return (
         <div>
-            <h2>Albumes</h2>
+            <h2>Albums</h2>
                <div className='albumDiv'>
                {data.map((item) => (
             <div  key={item.id} >
