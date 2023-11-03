@@ -31,9 +31,9 @@ function Fetch() {
 
     return (
         <div>
-               <div>
+               <div className='albumDiv'>
                {data.map((item) => (
-            <div key={item.id}>
+            <div key={item.id} >
                 <p>{item.album.title}</p>
                 {/* Accede a la URL de la imagen de la portada del álbum */}
                 <img src={item.album.cover_medium} alt="Album" />
