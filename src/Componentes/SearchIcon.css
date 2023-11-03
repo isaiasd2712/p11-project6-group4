@@ -11,5 +11,5 @@
 .searchSvg:hover {
     fill: #6a6a6a;
     filter: brightness(1.5);
-    transition: 0,9s;
+    transition: 0, 9s;
 }

@@ -3,7 +3,7 @@ import './Fetch.css';
 
 function Fetch() {
     const [data, setData] = useState([]);
-    const url = 'https://deezerdevs-deezer.p.rapidapi.com/search?q=albums';
+    const url = 'https://deezerdevs-deezer.p.rapidapi.com/search?q=pop';
     const options = {
         method: 'GET',
         headers: {
@@ -20,8 +20,8 @@ function Fetch() {
                 const result = await response.json();
                 console.log(result);
                 setData(result.data)
-            
-                
+
+
             } catch (error) {
                 console.error(error);
             }
@@ -32,18 +32,18 @@ function Fetch() {
     return (
         <div>
             <h2>Albums</h2>
-               <div className='albumDiv'>
-               {data.map((item) => (
-            <div  key={item.id} >
-                
-                {/* Accede a la URL de la imagen de la portada del álbum */}
-                <img src={item.album.cover_medium} alt="Album" />
+            <div className='albumDiv'>
+                {data.map((item) => (
+                    <div key={item.id} >
+
+                        {/* Accede a la URL de la imagen de la portada del álbum */}
+                        <img src={item.album.cover_medium} alt="Album" />
+                    </div>
+
+                ))}
+
             </div>
 
-            ))}
-        
-        </div>
-   
 
         </div>
     );
