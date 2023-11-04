@@ -1,20 +1,11 @@
 import './Header.css';
 import Logo from './Logo';
-import SearchIcon from './SearchIcon';
-
+import SearchInput from './SearchInput';
 function Header() {
     return (
         <header className="headerDiv">
-            <div className="logoDiv">
                 <Logo href="/" />
-
-            </div>
-            <div id="searchDiv" role="search">
-                <div>
-                    <SearchIcon />
-                </div>
-                <input className="searchImput" type="text" aria-labelledby="searchDiv" placeholder=" ¿What do you want to hear?" />
-            </div>
+                <SearchInput className="SearchInput" />
         </header>
     )
 }

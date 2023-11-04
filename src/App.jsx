@@ -4,7 +4,7 @@ import Fetch from './Componentes/Fetch';
 
 function App() {
   return (
-    <div>
+    <div className='divdiv'>
       <Header />
       <Fetch />
     </div>
