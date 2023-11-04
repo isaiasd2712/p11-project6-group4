@@ -10,6 +10,7 @@ function Header() {
         <header className="headerDiv">
             <div className="logoDiv">
                 <Logo />
+            
             </div>
             <div className="searchDiv" role="search">
                 <div>

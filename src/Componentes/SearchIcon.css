@@ -5,11 +5,11 @@
     height: 20px;
     position: absolute;
     transform: translateY(-50%);
-    left: 25px;
+    left: 25px
 }
 
 .searchSvg:hover {
     fill: #6a6a6a;
-    filter: brightness(1.5);
+    filter: brightness(1.7);
     transition: 0, 9s;
 }

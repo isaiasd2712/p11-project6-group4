@@ -1,3 +1,9 @@
 .logo{
     background-size: cover;
+    position: relative;
+    z-index: 10;
+}
+.logoAnimation{
+    display: flex;
+    align-items: center;
 }
