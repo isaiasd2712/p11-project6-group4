@@ -1,6 +1,5 @@
 import './animation.css';
 
-
 function animation() {
     return(
         <div class="loader">
@@ -9,4 +8,5 @@ function animation() {
         </div>
     )
 }
+
 export default animation;

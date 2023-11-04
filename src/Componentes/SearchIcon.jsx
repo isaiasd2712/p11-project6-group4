@@ -7,4 +7,5 @@ function SearchIcon() {
         </svg>
     )
 }
+
 export default SearchIcon;

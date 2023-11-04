@@ -3,8 +3,6 @@
     height: 20px;
     position: relative;
     z-index: 5;
-
-
 }
 
 .loader>div {
@@ -19,8 +17,6 @@
     background-color: #C94E09;
     border: 4px solid #C94E09;
     box-shadow: 0 0 10px #c94e09;
-    
-
 }
 
 .loader>div:nth-child(2) {
@@ -30,12 +26,10 @@
             #C94E09,
             red);
     animation: move 2s linear infinite;
-
 }
 
 @keyframes move {
     60% {
         transform: rotate(360deg);
     }
-
 }
