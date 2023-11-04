@@ -2,6 +2,12 @@
     position: absolute;
     right: 0;
     top: 80px;
+    min-width: 50%;
+    max-width: 65%;
+    max-height: 80%;
+    min-height: 65%;
+    overflow-y: scroll ;
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -10,11 +16,15 @@
     background-color: black;
     margin: 16px 16px;
     border-radius: 16px;
-    min-width: 50%;
-    max-width: 65%;
-    height: 75%;
-    overflow-y: scroll ;
-    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #1a1a1a;
+    border-radius: 6px;
 }
 
 img {
