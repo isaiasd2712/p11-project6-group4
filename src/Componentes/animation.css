@@ -1,8 +1,10 @@
 .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 20px;
     height: 20px;
     position: relative;
-    z-index: 5;
 }
 
 .loader>div {
@@ -13,14 +15,12 @@
 }
 
 .loader>div:nth-child(2) {
-    z-index: 2;
     background-color: #C94E09;
     border: 4px solid #C94E09;
     box-shadow: 0 0 10px #c94e09;
 }
 
 .loader>div:nth-child(2) {
-    z-index: 1;
     filter: blur(0.2px);
     background: linear-gradient(135deg,
             #C94E09,

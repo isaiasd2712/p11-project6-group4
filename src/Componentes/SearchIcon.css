@@ -3,9 +3,11 @@
     cursor: pointer;
     position: relative;
     left: 40px;
+    min-width: 20px;
+    max-height: 20px;
 }
 
 .searchSvg:hover {
     fill: #6a6a6a;
-    transition: 0, 9s;
+    transition: 0,9s;
 }

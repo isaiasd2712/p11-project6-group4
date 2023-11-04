@@ -1,12 +1,11 @@
 .headerDiv {
+    width: calc(100% - 32px);
     height: 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 16px; 
-    flex-wrap: wrap; 
     background-color: black;
     border-radius: 16px;
-    width: calc(100% - 32px);
     position: relative;
 }
