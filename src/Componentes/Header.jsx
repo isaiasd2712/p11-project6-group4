@@ -1,11 +1,32 @@
 import './Header.css';
 import Logo from './Logo';
-import SearchInput from './SearchInput';
-function Header() {
+import SearchIcon from "./SearchIcon";
+
+
+function Header({ handleSearch }) {
+
+    const handleInputChange = (event) => {
+        handleSearch(event.target.value);
+    };
+
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+    };
+
     return (
         <header className="headerDiv">
-                <Logo href="/" />
-                <SearchInput className="SearchInput" />
+            <Logo href="/" />
+
+            <div className="SearchInput" id="searchDiv" role="search">
+                <button  className= "searchIcon" type="submit">
+                    <SearchIcon id="searchIconBtn" />
+                </button>
+
+                <form onSubmit={handleFormSubmit} >
+                    <input className="searchImput" type="text" aria-labelledby="searchDiv" placeholder=" ¿What do you want to hear?" //value={searchTerm}
+                        onChange={handleSearch} />
+                </form>
+            </div>
         </header>
     )
 }
