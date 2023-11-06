@@ -17,15 +17,15 @@ function Header({ handleSearch }) {
         <header className="headerDiv">
             <Logo href="/" />
 
-            <div  id="searchDiv" role="search">
-                <button  className= "searchIcon" type="submit">
+            <div id="searchDiv" role="search">
+                <button className="searchIcon" type="submit">
                     <SearchIcon id="searchIconBtn" />
                 </button>
 
-                
-                    <input  onSubmit={handleFormSubmit} className="searchImput" type="text" aria-labelledby="searchDiv" placeholder=" ¿What do you want to hear?" //value={searchTerm}
-                        onChange={handleSearch} />
-                
+
+                <input onSubmit={handleFormSubmit} className="searchImput" type="text" aria-labelledby="searchDiv" placeholder=" ¿What do you want to hear?" //value={searchTerm}
+                    onChange={handleSearch} />
+
             </div>
         </header>
     )

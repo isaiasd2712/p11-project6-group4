@@ -1,6 +1,6 @@
-import './animation.css';
+import './Animation.css';
 
-function animation() {
+function Animation() {
     return(
         <div className="loader">
             <div></div>
@@ -9,4 +9,4 @@ function animation() {
     )
 }
 
-export default animation;
+export default Animation;

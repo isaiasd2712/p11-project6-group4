@@ -1,6 +1,6 @@
 import "../assets/piratifyLogo.svg"
 import './Logo.css'
-import Animation from "./animation";
+import Animation from "./Animation";
 
 function Logo({ id, href }) {
     return (
