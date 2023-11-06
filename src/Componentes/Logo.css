@@ -1,9 +1,10 @@
 .logo {
     position: relative;
-    z-index: 10;
+    
 }
 
 .logoAnimation {
     display: flex;
     align-items: center;
+    position: relative;
 }

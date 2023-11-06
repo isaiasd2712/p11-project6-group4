@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import './Fetch.css';
-import Header from "../Componentes/Header"
+import './Finder.css';
+import Header from "./Header"
 
-function Fetch() {
+function Finder() {
     const [data, setData] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
 
@@ -10,7 +10,7 @@ function Fetch() {
 
 
     useEffect(() => {
-        const fetchData = async () => {
+        const finderData = async () => {
             const url = `https://deezerdevs-deezer.p.rapidapi.com/search?q=${searchTerm}`;
             const options = {
                 method: 'GET',
@@ -29,7 +29,7 @@ function Fetch() {
             }
         };
         if (searchTerm !== "") {
-            fetchData();
+            finderData();
         }
 
     }, [searchTerm]); // Ejecuta la búsqueda cada vez que searchTerm cambie
@@ -44,7 +44,9 @@ function Fetch() {
     return (
         <div>
             <Header handleSearch={handleSearch} />
+            <div className='Categories'>
             <h2>Albums</h2>
+            </div>
             <div className='albumDiv'>
                 {data.map((item) => (
                     <div key={item.id}>
@@ -56,4 +58,4 @@ function Fetch() {
     );
 }
 
-export default Fetch;
+export default Finder;

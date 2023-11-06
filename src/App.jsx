@@ -1,11 +1,11 @@
 import './App.css';
-import Fetch from './Componentes/Fetch';
+import Finder from './Componentes/Finder';
 
 function App() {
   return (
     <div className='divdiv'>
       
-      <Fetch />
+      <Finder />
     </div>
   )
 }
