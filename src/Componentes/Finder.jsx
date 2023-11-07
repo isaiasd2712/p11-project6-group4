@@ -44,8 +44,10 @@ function Finder() {
     return (
         <div className='homeDiv'>
             <Header handleSearch={handleSearch} />
-            <div className='categories'>
+            <div className='categoriesDiv'>
             <h2>Albums</h2>
+            <h2>Play List</h2>
+            <h2>Play List</h2>
             </div>
             <div className='albumDiv'>
                 {data.map((item) => (
