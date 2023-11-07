@@ -6,8 +6,8 @@ function Finder() {
     const [data, setData] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
 
-console.log("la clave de Deezer es");
-console.log(import.meta.env.VITE_API_KEY);
+    console.log("la clave de Deezer es");
+    console.log(import.meta.env.VITE_API_KEY);
 
 
     useEffect(() => {
@@ -46,16 +46,16 @@ console.log(import.meta.env.VITE_API_KEY);
         <div className='homeDiv'>
             <Header handleSearch={handleSearch} />
             <div className='categoriesDiv'>
-            <h2>Albums</h2>
-            <h2>Play List</h2>
-            <h2>Play List</h2>
+                <h2 className='texto1'>Albums</h2>
+                <h2 className='texto2'>Play List</h2>
+                <h2 className='texto3'>Best Songs</h2>
             </div>
             <div className='albumDiv'>
                 {data.map((item) => (
                     <div key={item.id}>
                         <img src={item.album.cover_medium} alt="Album" />
                     </div>
-                ))} 
+                ))}
             </div>
         </div>
     );
