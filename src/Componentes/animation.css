@@ -1,9 +1,9 @@
-.loader {
+/* .loader {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     position: relative;
 }
 
@@ -16,7 +16,7 @@
 
 .loader>div:nth-child(2) {
     background-color: #af7c7c;
-    border: 3.9px solid #af7c7c;
+    border: 3px solid #af7c7c;
     box-shadow: 0 0 10px #af7c7c;
     filter: blur(0.4px);
 }
@@ -33,4 +33,4 @@
     100% {
         transform: rotate(360deg);
     }
-}
+} */
