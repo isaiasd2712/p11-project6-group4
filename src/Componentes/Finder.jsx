@@ -42,9 +42,9 @@ function Finder() {
 
 
     return (
-        <div>
+        <div className='homeDiv'>
             <Header handleSearch={handleSearch} />
-            <div className='Categories'>
+            <div className='categories'>
             <h2>Albums</h2>
             </div>
             <div className='albumDiv'>

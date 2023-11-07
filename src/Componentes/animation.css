@@ -15,17 +15,17 @@
 }
 
 .loader>div:nth-child(2) {
-    background-color: #C94E09;
-    border: 3.9px solid #C94E09;
-    box-shadow: 0 0 10px #c94e09;
+    background-color: #af7c7c;
+    border: 3.9px solid #af7c7c;
+    box-shadow: 0 0 10px #af7c7c;
     filter: blur(0.4px);
 }
 
 .loader>div:nth-child(2) {
     
     background: linear-gradient(195deg,
-            #C94E09,
-            rgb(208, 6, 6));
+         #836666,
+         #aa9090);
     animation: move 0.8s linear infinite;
 }
 

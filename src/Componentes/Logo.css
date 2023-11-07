@@ -8,3 +8,7 @@
     align-items: center;
     position: relative;
 }
+
+.svgLogo{
+    fill: #af7c7c;
+}

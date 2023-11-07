@@ -33,18 +33,15 @@
 
 .searchImput::placeholder {
     color: #6a6a6a;
-    position: relative;
-    
-    
 }
 
 .searchImput:hover {
-    border: 2px solid #c94e09;
-    
+    border: 2px solid #af7c7c;
 }
 
 .searchImput:focus {
     outline: none;
+    background-color: #121212;
 }
 .logo {
     position: relative;
@@ -59,13 +56,5 @@
     background: none;
     border: none;
 }
-.typeImput{
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    border: none;
-    font-family: cursive;
-    color: #c94e09;
-    
-}
+
 
