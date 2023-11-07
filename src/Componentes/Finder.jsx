@@ -6,7 +6,8 @@ function Finder() {
     const [data, setData] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
 
-
+console.log("la clave de Deezer es");
+console.log(import.meta.env.VITE_API_KEY);
 
 
     useEffect(() => {
@@ -15,7 +16,7 @@ function Finder() {
             const options = {
                 method: 'GET',
                 headers: {
-                    'X-RapidAPI-Key': '02d42d8fe8mshb672bbe6c6a7da5p1d9af8jsn2d6bea08f902',
+                    'X-RapidAPI-Key': import.meta.env.VITE_API_KEY,
                     'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com'
                 }
             };
