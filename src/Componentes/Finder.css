@@ -67,14 +67,17 @@ img:hover {
 
 .texto1 {
     background-color: #D04445;
+    text-decoration: none;
 }
 
 .texto2 {
     background-color: #4258A1;
+    text-decoration: none;
 }
 
 .texto3 {
     background-color: #FBA16C;
+    text-decoration: none;
 }
 
 .texto1, .texto2, .texto3{

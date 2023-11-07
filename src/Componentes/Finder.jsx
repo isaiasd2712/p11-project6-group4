@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import './Finder.css';
 import Header from "./Header"
+import { BrowserRouter, Link, Route } from 'react-router-dom';
+
 
 function Finder() {
     const [data, setData] = useState([]);
@@ -46,9 +48,15 @@ function Finder() {
         <div className='homeDiv'>
             <Header handleSearch={handleSearch} />
             <div className='categoriesDiv'>
-                <h2 className='texto1'>Albums</h2>
-                <h2 className='texto2'>Play List</h2>
-                <h2 className='texto3'>Best Songs</h2>
+                <BrowserRouter>
+                <Link to='/Albums'  className='texto1'>Albums</Link>
+                <Link to='/playList'  className='texto2'>Play List</Link>
+                <Link to='/bestSongs'  className='texto3'>Best Songs</Link>
+                </BrowserRouter>
+                {/* <Route >
+                onClick={toPage('Albums')}
+                </Route> */}
+                
             </div>
             <div className='albumDiv'>
                 {data.map((item) => (
