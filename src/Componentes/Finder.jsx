@@ -7,6 +7,7 @@ import { BrowserRouter, Link, Route } from 'react-router-dom';
 function Finder() {
     const [data, setData] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
+    
 
     console.log("la clave de Deezer es");
     console.log(import.meta.env.VITE_API_KEY);
@@ -31,12 +32,17 @@ function Finder() {
                 console.error(error);
             }
         };
-        if (searchTerm !== "") {
-            finderData();
+        if (searchTerm === "") {
+            setSearchTerm("very")
         }
+        
+        finderData();
+            
+        
+        
 
     }, [searchTerm]); // Ejecuta la búsqueda cada vez que searchTerm cambie
-
+    
 
     const handleSearch = (e) => {
         setSearchTerm(e.target.value);
@@ -50,16 +56,17 @@ function Finder() {
             <div className='categoriesDiv'>
                 <BrowserRouter>
                 <Link to='/Albums'  className='texto1'>Albums</Link>
-                <Link to='/playList'  className='texto2'>Play List</Link>
+                <Link to='/Artists'  className='texto2'>Artists</Link>
                 <Link to='/bestSongs'  className='texto3'>Best Songs</Link>
                 </BrowserRouter>
-                {/* <Route >
-                onClick={toPage('Albums')}
+                {/* <Route path= >
+
                 </Route> */}
                 
             </div>
             <div className='albumDiv'>
-                {data.map((item) => (
+                 {/* short-circuit */}
+                {data && data.map((item) => (
                     <div key={item.id}>
                         <img src={item.album.cover_medium} alt="Album" />
                     </div>

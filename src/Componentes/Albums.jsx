@@ -24,14 +24,26 @@ function Albums() {
 
         } catch (error) {
             console.error(error);
-            fetchData();
+            
             
         };
+        fetchData();
 
     };
     return (
-        <div>
-            <h2>Albums</h2>
+        <div className='homeDiv'>
+            <Header handleSearch={handleSearch} />
+            <div className='categoriesDiv'>
+                <BrowserRouter>
+                <Link to='/Albums'  className='texto1'>Albums</Link>
+                <Link to='/playList'  className='texto2'>Play List</Link>
+                <Link to='/bestSongs'  className='texto3'>Best Songs</Link>
+                </BrowserRouter>
+                {/* <Route >
+                onClick={toPage('Albums')}
+                </Route> */}
+                
+            </div>
             <div className='albumDiv'>
                 {data.map((item) => (
                     <div key={item.id}>
