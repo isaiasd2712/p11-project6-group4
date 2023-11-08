@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-import './Albums.css';
-
+import './Finder.css';
 
 function Albums() {
     const [data, setData] = useState([]);
