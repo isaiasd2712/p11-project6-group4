@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './Finder.css';
 
+
 function Albums() {
     const [data, setData] = useState([]);
     const url = 'https://deezerdevs-deezer.p.rapidapi.com/search?q=search';
@@ -9,7 +10,7 @@ function Albums() {
         headers: {
             'X-RapidAPI-Key': import.meta.env.VITE_API_KEY,
             'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com'
-            
+
         }
     }
 
@@ -23,8 +24,8 @@ function Albums() {
 
         } catch (error) {
             console.error(error);
-            
-            
+
+
         };
         fetchData();
 
@@ -34,14 +35,14 @@ function Albums() {
             <Header handleSearch={handleSearch} />
             <div className='categoriesDiv'>
                 <BrowserRouter>
-                <Link to='/Albums'  className='texto1'>Albums</Link>
-                <Link to='/playList'  className='texto2'>Play List</Link>
-                <Link to='/bestSongs'  className='texto3'>Best Songs</Link>
+                    <Link to='/Albums' className='texto1'>Albums</Link>
+                    <Link to='/playList' className='texto2'>Play List</Link>
+                    <Link to='/bestSongs' className='texto3'>Best Songs</Link>
                 </BrowserRouter>
                 {/* <Route >
                 onClick={toPage('Albums')}
                 </Route> */}
-                
+
             </div>
             <div className='albumDiv'>
                 {data.map((item) => (

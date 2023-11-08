@@ -4,18 +4,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 16px; 
+    margin: 16px;
     background-color: black;
     border-radius: 16px;
     position: relative;
 }
+
 #searchDiv {
     min-width: 150px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 0 16px;
-   
+
 }
 
 .searchImput {
@@ -43,18 +44,18 @@
     outline: none;
     background-color: #121212;
 }
+
 .logo {
     position: relative;
-    
+
 }
 
 .logoAnimation {
     display: flex;
     align-items: center;
 }
-.searchIcon{
+
+.searchIcon {
     background: none;
     border: none;
 }
-
-

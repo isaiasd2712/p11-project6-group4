@@ -7,12 +7,30 @@
     justify-content: center;
 }
 
-.albumDiv:hover{
+.imgDiv {
+    width: 150px;
+    height: auto;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.pDiv {
+    color:white;
+    text-align: center;
+    font-size: 100%;
+}
+
+.albumDiv:hover {
     background: linear-gradient(to bottom, #836666, black);
     transition-delay: 0.9s;
 }
 
-.albumDiv, .categoriesDiv {
+.albumDiv,
+.categoriesDiv {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -24,7 +42,6 @@
     top: 80px;
     height: 80%;
     white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
 }
 
@@ -32,7 +49,6 @@
     left: 0;
     width: 27vw;
     align-items: center;
-    box-sizing: content-box;
 }
 
 
@@ -40,6 +56,7 @@
     width: 12px;
     background-color: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: #1a1a1a;
     border-radius: 6px;
@@ -50,17 +67,17 @@ img {
     min-width: 100px;
     cursor: pointer;
     border-radius: 16px;
-    box-sizing: border-box;
 }
 
 img:hover {
     transition: 0.5s;
-    scale: 1.2;
+    scale: 1.1;
     border: 2px solid #aa9090;
-    box-shadow: 0 0 10px #aa9090;
 }
 
-.texto1, .texto2, .texto3{
+.texto1,
+.texto2,
+.texto3 {
     border: 2px solid #1a1a1a;
     border-radius: 16px;
     line-height: 128px;
@@ -85,7 +102,9 @@ img:hover {
     background-color: #FBA16C;
 }
 
-.texto1:hover, .texto2:hover, .texto3:hover {
+.texto1:hover,
+.texto2:hover,
+.texto3:hover {
     cursor: pointer;
     background-color: #121212;
 }

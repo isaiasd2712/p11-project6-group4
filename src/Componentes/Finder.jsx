@@ -7,11 +7,6 @@ import { BrowserRouter, Link, Route } from 'react-router-dom';
 function Finder() {
     const [data, setData] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
-    
-
-    console.log("la clave de Deezer es");
-    console.log(import.meta.env.VITE_API_KEY);
-
 
     useEffect(() => {
         const finderData = async () => {
@@ -35,14 +30,14 @@ function Finder() {
         if (searchTerm === "") {
             setSearchTerm("very")
         }
-        
+
         finderData();
-            
-        
-        
+
+
+
 
     }, [searchTerm]); // Ejecuta la búsqueda cada vez que searchTerm cambie
-    
+
 
     const handleSearch = (e) => {
         setSearchTerm(e.target.value);
@@ -55,20 +50,21 @@ function Finder() {
             <Header handleSearch={handleSearch} />
             <div className='categoriesDiv'>
                 <BrowserRouter>
-                <Link to='/Albums'  className='texto1'>Albums</Link>
-                <Link to='/Artists'  className='texto2'>Artists</Link>
-                <Link to='/bestSongs'  className='texto3'>Best Songs</Link>
+                    <Link to='/' className='texto1'>Albums</Link>
+                    <Link to='7' className='texto2'>Artists</Link>
+                    <Link to='/' className='texto3'>Songs</Link>
                 </BrowserRouter>
                 {/* <Route path= >
 
                 </Route> */}
-                
+
             </div>
             <div className='albumDiv'>
-                 {/* short-circuit */}
+                {/* short-circuit */}
                 {data && data.map((item) => (
-                    <div key={item.id}>
+                    <div className='imgDiv' key={item.id}>
                         <img src={item.album.cover_medium} alt="Album" />
+                        <p className='pDiv'>{item.title}</p>
                     </div>
                 ))}
             </div>
