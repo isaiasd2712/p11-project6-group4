@@ -51,8 +51,10 @@ function Finder() {
             <div className='categoriesDiv'>
                 <BrowserRouter>
                     <Link to='/' className='texto1'>Albums</Link>
-                    <Link to='7' className='texto2'>Artists</Link>
+                    <Link to='/' className='texto2'>Artists</Link>
                     <Link to='/' className='texto3'>Songs</Link>
+                    <Link to='/' className='texto4'>Libraries</Link>
+                    
                 </BrowserRouter>
                 {/* <Route path= >
 

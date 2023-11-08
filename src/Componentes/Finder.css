@@ -1,7 +1,6 @@
 .albumDiv {
     right: 0;
-    top: 80px;
-    width: 60vw;
+    width: 75%;
     overflow-y: scroll;
     overflow-x: hidden;
     justify-content: center;
@@ -19,7 +18,7 @@
 }
 
 .pDiv {
-    color:white;
+    color: white;
     text-align: center;
     font-size: 100%;
 }
@@ -36,18 +35,16 @@
     flex-wrap: wrap;
     background-color: black;
     border-radius: 16px;
-    margin: 16px 16px;
-    grid-gap: 8px;
-    padding: 8px;
-    top: 80px;
+    margin: 0%;
+    padding: 0%;
     height: 80%;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
 .categoriesDiv {
-    left: 0;
-    width: 27vw;
+    left: 0%;
+    width: 20vw;
     align-items: center;
 }
 
@@ -77,17 +74,20 @@ img:hover {
 
 .texto1,
 .texto2,
-.texto3 {
+.texto3,
+.texto4 {
     border: 2px solid #1a1a1a;
     border-radius: 16px;
-    line-height: 128px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 128px;
+    height: 20%;
     color: #fff;
-    font-size: 32px;
+    font-size: 150%;
     font-weight: 900;
     text-decoration: none;
+    box-sizing: content-box;
 }
 
 .texto1 {
@@ -102,9 +102,15 @@ img:hover {
     background-color: #FBA16C;
 }
 
+.texto4 {
+    background-color: #6cfb92;
+}
+
+
 .texto1:hover,
 .texto2:hover,
-.texto3:hover {
+.texto3:hover,
+.texto4:hover {
     cursor: pointer;
     background-color: #121212;
 }
@@ -119,4 +125,8 @@ img:hover {
 
 .texto3:hover {
     border: 2px solid #FBA16C;
+}
+
+.texto4:hover {
+    border: 2px solid #6cfb92;
 }
