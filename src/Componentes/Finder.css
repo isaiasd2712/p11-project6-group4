@@ -4,6 +4,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     justify-content: center;
+    gap: 2%;
 }
 
 .imgDiv {
@@ -21,7 +22,9 @@
     color: white;
     text-align: center;
     font-size: 100%;
+    cursor: pointer;
 }
+ 
 
 .albumDiv:hover {
     background: linear-gradient(to bottom, #836666, black);
@@ -67,9 +70,16 @@ img {
 }
 
 img:hover {
+   
+    border: 2px solid #aa9090;
+    border: 2px solid #aa9090;
+}
+.pDiv,
+img:hover {
     transition: 0.5s;
     scale: 1.1;
-    border: 2px solid #aa9090;
+    box-sizing: border-box;
+    
 }
 
 .texto1,
