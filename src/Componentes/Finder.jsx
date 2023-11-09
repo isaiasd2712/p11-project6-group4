@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './Finder.css';
 import Header from "./Header";
 import { BrowserRouter, Link, Route } from 'react-router-dom';
-import Play from "../assets/iconBrowser.png"
+
 
 
 function Finder() {
