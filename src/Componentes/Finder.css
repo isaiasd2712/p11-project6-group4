@@ -34,7 +34,20 @@
     font-weight: 300;
     cursor: pointer;
 }
+.playDiv{
+    position:absolute;
+    border: none;
+    min-width: 0px;
+    margin: 60px;
+    opacity: 0;
+    
+}
 
+.playDiv:hover{
+    opacity: 1;
+    transition: 0.5s;
+    border: none;
+}
 .pDiv,
 .hDiv {
     color: #dddddd;
@@ -93,6 +106,7 @@ img {
 
 img:hover {
     border: 2px solid #aa9090;
+    
 
 }
 .imgDiv:hover{
@@ -100,13 +114,12 @@ img:hover {
     transition: 0.5s;
     scale: 1.1;
 }
+
 .pDiv,
 img:hover {
     box-sizing: border-box;
-    
+}    
 
-
-}
 
 .texto1,
 .texto2,
