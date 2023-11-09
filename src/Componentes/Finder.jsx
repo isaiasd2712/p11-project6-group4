@@ -28,7 +28,7 @@ function Finder() {
             }
         };
         if (searchTerm === "") {
-            setSearchTerm("very")
+            setSearchTerm('dua lipa')
         }
 
         finderData();
