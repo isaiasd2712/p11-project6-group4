@@ -8,6 +8,7 @@
 }
 
 .imgDiv {
+    padding-top: 16px;
     width: 150px;
     height: auto;
     white-space: normal;
@@ -19,13 +20,14 @@
 }
 
 .pDiv {
+    max-width: 130px;
     color: white;
     text-align: center;
     font-size: 100%;
     cursor: pointer;
+    box-sizing: border-box;
+    
 }
- 
-
 .albumDiv:hover {
     background: linear-gradient(to bottom, #836666, black);
     transition-delay: 0.9s;
@@ -47,6 +49,7 @@
 
 .categoriesDiv {
     left: 0%;
+    padding: 1%;
     width: 20vw;
     align-items: center;
 }
@@ -70,15 +73,16 @@ img {
 }
 
 img:hover {
+    border: 2px solid #aa9090;
    
-    border: 2px solid #aa9090;
-    border: 2px solid #aa9090;
-}
+}   
+
 .pDiv,
 img:hover {
+    box-sizing: border-box;
     transition: 0.5s;
     scale: 1.1;
-    box-sizing: border-box;
+
     
 }
 
@@ -97,7 +101,9 @@ img:hover {
     font-size: 150%;
     font-weight: 900;
     text-decoration: none;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .texto1 {
