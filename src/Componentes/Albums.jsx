@@ -4,7 +4,7 @@ import './Finder.css';
 
 function Albums() {
     const [data, setData] = useState([]);
-    const url = 'https://deezerdevs-deezer.p.rapidapi.com/search?q=search';
+    const url = 'https://deezerdevs-deezer.p.rapidapi.com/search?';
     const options = {
         method: 'GET',
         headers: {

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './Finder.css';
 import Header from "./Header";
 import { BrowserRouter, Link, Route } from 'react-router-dom';
-import Play from "../assets/iconBrowser.png"
+
 
 
 function Finder() {
@@ -68,8 +68,7 @@ function Finder() {
                     <div className='imgDiv' key={item.id}>
                         <img src={item.album.cover_medium} alt="Album" />
                         <p className='pDiv'>{item.artist.name}</p>
-                        <h2 className='hDiv'>{item.title}</h2>
-                        <img className="playDiv" src={Play} alt="Icon Image"/>
+                        <h2 className='hDiv'>{item.title}</h2>                        
                     </div>
                 ))}
             </div>

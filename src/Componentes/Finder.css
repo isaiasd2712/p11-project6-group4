@@ -5,16 +5,13 @@
     overflow-x: hidden;
     justify-content: center;
     gap: 2%;
+
 }
 
 .hDiv {
     color: white;
 }
 
-.playDiv {
-    position: absolute;
-    
-}
 
 .imgDiv {
     padding-top: 16px;
@@ -30,21 +27,26 @@
 
 .pDiv {
     font-weight: 700;
+    cursor: pointer;
 }
 
 .hDiv {
     font-weight: 300;
+    cursor: pointer;
 }
 
 .pDiv,
-.hDiv{
-    color: #dddddd ;
+.hDiv {
+    color: #dddddd;
     max-width: 130px;
     text-align: center;
     font-size: 100%;
-    box-sizing: border-box;
+    box-sizing: content-box;
+    padding-top: 5%;
     
+
 }
+
 .albumDiv:hover {
     background: linear-gradient(to bottom, #836666, black);
     transition-delay: 0.9s;
@@ -91,16 +93,19 @@ img {
 
 img:hover {
     border: 2px solid #aa9090;
-   
-}   
 
-.pDiv,
-img:hover {
+}
+.imgDiv:hover{
     box-sizing: border-box;
     transition: 0.5s;
     scale: 1.1;
-
+}
+.pDiv,
+img:hover {
+    box-sizing: border-box;
     
+
+
 }
 
 .texto1,
