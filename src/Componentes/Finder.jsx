@@ -51,7 +51,7 @@ function Finder() {
             <Header handleSearch={handleSearch} />
             <div className='categoriesDiv'>
                 <BrowserRouter>
-                    <Link to='/' className='texto1'>Albums</Link>
+                    <Link to='/' id="texto1" className='texto1'>Albums</Link>
                     <Link to='/' className='texto2'>Artists</Link>
                     <Link to='/' className='texto3'>Songs</Link>
                     <Link to='/' className='texto4'>Libraries</Link>
@@ -65,11 +65,10 @@ function Finder() {
             <div className='albumDiv'>
                 {/* short-circuit */}
                 {data && data.map((item) => (
-                    <div className='imgDiv' key={item.id}>
+                    <div className='imgDiv' key={item.id}>  
                         <img src={item.album.cover_medium} alt="Album" />
                         <p className='pDiv'>{item.artist.name}</p>
-                        <h2 className='hDiv'>{item.title}</h2>
-                        <img className="playDiv" src={Play} alt="Icon Image"/>
+                        <h2 className='hDiv'>{item.title}</h2>         
                     </div>
                 ))}
             </div>

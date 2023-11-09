@@ -13,7 +13,6 @@
 
 .playDiv {
     position: absolute;
-    
 }
 
 .imgDiv {
@@ -162,4 +161,34 @@ img:hover {
 
 .texto4:hover {
     border: 2px solid #6cfb92;
+}
+
+
+
+
+
+
+
+
+
+
+
+.texto1:active {
+    transition: 0.3s;
+    background-color: #d0444486;
+}
+
+.texto2:active {
+    transition: 0.3s;
+    background-color: #4258A186;
+}
+
+.texto3:active {
+    transition: 0.3s;
+    background-color: #FBA16C86;
+}
+
+.texto4:active{
+    transition: 0.3s;
+    background-color: #6cfb9286;
 }
