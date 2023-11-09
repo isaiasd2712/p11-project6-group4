@@ -11,6 +11,11 @@
     color: white;
 }
 
+.playDiv {
+    position: absolute;
+    
+}
+
 .imgDiv {
     padding-top: 16px;
     width: 150px;
@@ -24,11 +29,19 @@
 }
 
 .pDiv {
+    font-weight: 700;
+}
+
+.hDiv {
+    font-weight: 300;
+}
+
+.pDiv,
+.hDiv{
+    color: #dddddd ;
     max-width: 130px;
-    color: white;
     text-align: center;
     font-size: 100%;
-    cursor: pointer;
     box-sizing: border-box;
     
 }
