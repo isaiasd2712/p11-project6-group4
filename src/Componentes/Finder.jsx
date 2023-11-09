@@ -66,7 +66,8 @@ function Finder() {
                 {data && data.map((item) => (
                     <div className='imgDiv' key={item.id}>
                         <img src={item.album.cover_medium} alt="Album" />
-                        <p className='pDiv'>{item.title}</p>
+                        <p className='pDiv'>{item.artist.name}</p>
+                        <h2 className='hDiv'>{item.title}</h2>
                     </div>
                 ))}
             </div>
