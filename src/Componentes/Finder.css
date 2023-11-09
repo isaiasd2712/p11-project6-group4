@@ -34,20 +34,22 @@
     font-weight: 300;
     cursor: pointer;
 }
-.playDiv{
-    position:absolute;
+
+.playDiv {
+    position: absolute;
     border: none;
     min-width: 0px;
-    margin: 60px;
+    padding: 60px;
     opacity: 0;
-    
+
 }
 
-.playDiv:hover{
+.playDiv:hover {
     opacity: 1;
     transition: 0.5s;
     border: none;
 }
+
 .pDiv,
 .hDiv {
     color: #dddddd;
@@ -56,7 +58,7 @@
     font-size: 100%;
     box-sizing: content-box;
     padding-top: 5%;
-    
+
 
 }
 
@@ -106,19 +108,19 @@ img {
 
 img:hover {
     border: 2px solid #aa9090;
-    
+
 
 }
-.imgDiv:hover{
-    box-sizing: border-box;
+
+.imgDiv:hover {
     transition: 0.5s;
     scale: 1.1;
 }
 
-.pDiv,
+
 img:hover {
     box-sizing: border-box;
-}    
+}
 
 
 .texto1,
@@ -181,19 +183,23 @@ img:hover {
 .texto4:hover {
     border: 2px solid #6cfb92;
 }
+
 .texto1:active {
     transition: 0.3s;
     background-color: #d0444486;
 }
+
 .texto2:active {
     transition: 0.3s;
     background-color: #4258A186;
 }
+
 .texto3:active {
     transition: 0.3s;
     background-color: #FBA16C86;
 }
-.texto4:active{
+
+.texto4:active {
     transition: 0.3s;
     background-color: #6cfb9286;
 }

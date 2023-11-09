@@ -55,7 +55,7 @@ function Finder() {
                     <Link to='/' className='texto2'>Artists</Link>
                     <Link to='/' className='texto3'>Songs</Link>
                     <Link to='/' className='texto4'>Libraries</Link>
-                    
+
                 </BrowserRouter>
                 {/* <Route path= >
 
@@ -65,7 +65,7 @@ function Finder() {
             <div className='albumDiv'>
                 {/* short-circuit */}
                 {data && data.map((item) => (
-                    <div className='imgDiv' key={item.id}>  
+                    <div className='imgDiv' key={item.id}>
                         <img src={item.album.cover_medium} alt="Album" />
                         <p className='pDiv'>{item.artist.name}</p>
                         <h2 className='hDiv'>{item.title}</h2>
