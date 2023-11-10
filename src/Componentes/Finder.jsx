@@ -69,6 +69,7 @@ function Finder() {
                         <img src={item.album.cover_medium} alt="Album" />
                         <p className='pDiv'>{item.artist.name}</p>
                         <h2 className='hDiv'>{item.title}</h2>
+                        <div className='circle'></div>
                         <img className='playDiv' src={Play} alt='playIcon'></img>
                     </div>
                 ))}

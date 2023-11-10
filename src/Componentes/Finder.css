@@ -5,6 +5,7 @@
     overflow-x: hidden;
     justify-content: center;
     gap: 2%;
+    box-sizing: content-box;
 
 }
 
@@ -34,7 +35,12 @@
     font-weight: 300;
     cursor: pointer;
 }
-
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    background-color: gray;
+}
 .playDiv {
     position: absolute;
     border: none;
@@ -48,6 +54,8 @@
     opacity: 1;
     transition: 0.5s;
     border: none;
+    
+    
 }
 
 .pDiv,
@@ -56,7 +64,6 @@
     max-width: 130px;
     text-align: center;
     font-size: 100%;
-    box-sizing: content-box;
     padding-top: 5%;
 
 
@@ -115,11 +122,6 @@ img:hover {
 .imgDiv:hover {
     transition: 0.5s;
     scale: 1.1;
-}
-
-
-img:hover {
-    box-sizing: border-box;
 }
 
 
