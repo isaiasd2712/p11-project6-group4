@@ -2,7 +2,6 @@ import './Header.css';
 import Logo from './Logo';
 import SearchIcon from "./SearchIcon";
 
-
 function Header({ handleSearch }) {
 
     const handleInputChange = (event) => {
@@ -21,8 +20,6 @@ function Header({ handleSearch }) {
                 <button className="searchIcon" type="submit">
                     <SearchIcon id="searchIconBtn" />
                 </button>
-
-
                 <input onSubmit={handleFormSubmit} className="searchImput" type="text" aria-labelledby="searchDiv" placeholder=" ¿What do you want to hear?" //value={searchTerm}
                     onChange={handleSearch} />
 

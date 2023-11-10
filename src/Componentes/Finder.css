@@ -6,13 +6,11 @@
     justify-content: center;
     gap: 2%;
     box-sizing: content-box;
-
 }
 
 .hDiv {
     color: white;
 }
-
 
 .imgDiv {
     padding-top: 3%;
@@ -35,27 +33,26 @@
     font-weight: 300;
     cursor: pointer;
 }
-.circle{
+
+.circle {
     position: absolute;
     border-radius: 50%;
     width: 30px;
     background-color: gray;
 }
+
 .playDiv {
     position: absolute;
     border: none;
     min-width: 0px;
     padding: 60px;
     opacity: 0;
-
 }
 
 .playDiv:hover {
     opacity: 1;
     transition: 0.5s;
     border: none;
-    
-    
 }
 
 .pDiv,
@@ -65,8 +62,6 @@
     text-align: center;
     font-size: 100%;
     padding-top: 5%;
-
-
 }
 
 .albumDiv:hover {
@@ -95,7 +90,6 @@
     align-items: center;
 }
 
-
 ::-webkit-scrollbar {
     width: 12px;
     background-color: transparent;
@@ -115,15 +109,12 @@ img {
 
 img:hover {
     border: 2px solid #aa9090;
-
-
 }
 
 .imgDiv:hover {
     transition: 0.5s;
     scale: 1.1;
 }
-
 
 .texto1,
 .texto2,
@@ -160,7 +151,6 @@ img:hover {
 .texto4 {
     background-color: #6cfb92;
 }
-
 
 .texto1:hover,
 .texto2:hover,

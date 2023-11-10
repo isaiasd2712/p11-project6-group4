@@ -4,7 +4,6 @@ import Header from "./Header";
 import { BrowserRouter, Link, Route } from 'react-router-dom';
 import Play from '../assets/iconBrowser.png'
 
-
 function Finder() {
     const [data, setData] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
@@ -31,20 +30,14 @@ function Finder() {
         if (searchTerm === "") {
             setSearchTerm('dua lipa')
         }
-
         finderData();
 
-
-
-
     }, [searchTerm]); // Ejecuta la búsqueda cada vez que searchTerm cambie
-
 
     const handleSearch = (e) => {
         setSearchTerm(e.target.value);
         console.log(e.target.value);
     }
-
 
     return (
         <div className='homeDiv'>
@@ -57,9 +50,6 @@ function Finder() {
                     <Link to='/' className='texto4'>Libraries</Link>
 
                 </BrowserRouter>
-                {/* <Route path= >
-
-                </Route> */}
 
             </div>
             <div className='albumDiv'>

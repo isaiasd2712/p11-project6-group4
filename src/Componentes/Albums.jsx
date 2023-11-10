@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Finder.css';
 
-
 function Albums() {
     const [data, setData] = useState([]);
     const url = 'https://deezerdevs-deezer.p.rapidapi.com/search?';
@@ -10,10 +9,8 @@ function Albums() {
         headers: {
             'X-RapidAPI-Key': import.meta.env.VITE_API_KEY,
             'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com'
-
         }
     }
-
     useEffect()
     const fetchData = async () => {
         try {
@@ -24,11 +21,8 @@ function Albums() {
 
         } catch (error) {
             console.error(error);
-
-
         };
         fetchData();
-
     };
     return (
         <div className='homeDiv'>
@@ -42,7 +36,6 @@ function Albums() {
                 {/* <Route >
                 onClick={toPage('Albums')}
                 </Route> */}
-
             </div>
             <div className='albumDiv'>
                 {data.map((item) => (
